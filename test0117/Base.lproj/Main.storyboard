@@ -134,7 +134,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ここで映像や音声、ノートを記録し始めます" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K3f-pQ-kG5">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ここで映像や音声、ノートを記録し始めます" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K3f-pQ-kG5">
                                 <rect key="frame" x="130" y="137" width="340" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -142,6 +142,10 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="K3f-pQ-kG5" firstAttribute="top" secondItem="a1H-PS-NNJ" secondAttribute="bottom" constant="73" id="E3h-xm-0XA"/>
+                            <constraint firstItem="K3f-pQ-kG5" firstAttribute="centerX" secondItem="Pcf-40-xwJ" secondAttribute="centerX" id="Ipa-ph-cfD"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zVu-PY-BQf" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -160,8 +164,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="54b7e1f981b7df7c817af48d1b96ad5e_400x400" translatesAutoresizingMaskIntoConstraints="NO" id="aYg-vQ-Mg5">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="449"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="54b7e1f981b7df7c817af48d1b96ad5e_400x400" translatesAutoresizingMaskIntoConstraints="NO" id="aYg-vQ-Mg5">
+                                <rect key="frame" x="0.0" y="306" width="600" height="294"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

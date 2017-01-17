@@ -13,6 +13,7 @@
 		007E88301E2D92CB007A7A4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 007E882E1E2D92CB007A7A4F /* LaunchScreen.storyboard */; };
 		00C8D78D1E2D9B5800FF0DD0 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C8D78C1E2D9B5800FF0DD0 /* ListViewController.swift */; };
 		00C8D78F1E2DC3AE00FF0DD0 /* testViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C8D78E1E2DC3AE00FF0DD0 /* testViewController.swift */; };
+		00C8D7911E2DCE8100FF0DD0 /* testSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C8D7901E2DCE8100FF0DD0 /* testSetting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		007E88311E2D92CB007A7A4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00C8D78C1E2D9B5800FF0DD0 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		00C8D78E1E2DC3AE00FF0DD0 /* testViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testViewController.swift; sourceTree = "<group>"; };
+		00C8D7901E2DCE8100FF0DD0 /* testSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testSetting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				007E88291E2D92CB007A7A4F /* Main.storyboard */,
 				00C8D78C1E2D9B5800FF0DD0 /* ListViewController.swift */,
 				00C8D78E1E2DC3AE00FF0DD0 /* testViewController.swift */,
+				00C8D7901E2DCE8100FF0DD0 /* testSetting.swift */,
 				007E882C1E2D92CB007A7A4F /* Assets.xcassets */,
 				007E882E1E2D92CB007A7A4F /* LaunchScreen.storyboard */,
 				007E88311E2D92CB007A7A4F /* Info.plist */,
@@ -141,6 +144,7 @@
 			files = (
 				00C8D78F1E2DC3AE00FF0DD0 /* testViewController.swift in Sources */,
 				00C8D78D1E2D9B5800FF0DD0 /* ListViewController.swift in Sources */,
+				00C8D7911E2DCE8100FF0DD0 /* testSetting.swift in Sources */,
 				007E88261E2D92CB007A7A4F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

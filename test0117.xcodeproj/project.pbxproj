@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		007E88261E2D92CB007A7A4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007E88251E2D92CB007A7A4F /* AppDelegate.swift */; };
-		007E88281E2D92CB007A7A4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007E88271E2D92CB007A7A4F /* ViewController.swift */; };
 		007E882B1E2D92CB007A7A4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 007E88291E2D92CB007A7A4F /* Main.storyboard */; };
 		007E882D1E2D92CB007A7A4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 007E882C1E2D92CB007A7A4F /* Assets.xcassets */; };
 		007E88301E2D92CB007A7A4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 007E882E1E2D92CB007A7A4F /* LaunchScreen.storyboard */; };
+		00C8D78D1E2D9B5800FF0DD0 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C8D78C1E2D9B5800FF0DD0 /* ListViewController.swift */; };
+		00C8D78F1E2DC3AE00FF0DD0 /* testViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C8D78E1E2DC3AE00FF0DD0 /* testViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		007E88221E2D92CB007A7A4F /* test0117.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test0117.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		007E88251E2D92CB007A7A4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		007E88271E2D92CB007A7A4F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		007E882A1E2D92CB007A7A4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		007E882C1E2D92CB007A7A4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		007E882F1E2D92CB007A7A4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		007E88311E2D92CB007A7A4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00C8D78C1E2D9B5800FF0DD0 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		00C8D78E1E2DC3AE00FF0DD0 /* testViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +57,9 @@
 			isa = PBXGroup;
 			children = (
 				007E88251E2D92CB007A7A4F /* AppDelegate.swift */,
-				007E88271E2D92CB007A7A4F /* ViewController.swift */,
 				007E88291E2D92CB007A7A4F /* Main.storyboard */,
+				00C8D78C1E2D9B5800FF0DD0 /* ListViewController.swift */,
+				00C8D78E1E2DC3AE00FF0DD0 /* testViewController.swift */,
 				007E882C1E2D92CB007A7A4F /* Assets.xcassets */,
 				007E882E1E2D92CB007A7A4F /* LaunchScreen.storyboard */,
 				007E88311E2D92CB007A7A4F /* Info.plist */,
@@ -96,6 +99,7 @@
 				TargetAttributes = {
 					007E88211E2D92CB007A7A4F = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 6696GEY228;
 					};
 				};
 			};
@@ -135,7 +139,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				007E88281E2D92CB007A7A4F /* ViewController.swift in Sources */,
+				00C8D78F1E2DC3AE00FF0DD0 /* testViewController.swift in Sources */,
+				00C8D78D1E2D9B5800FF0DD0 /* ListViewController.swift in Sources */,
 				007E88261E2D92CB007A7A4F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,6 +256,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = test0117/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.self.test0117;
@@ -262,6 +268,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = test0117/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.self.test0117;
@@ -288,6 +295,7 @@
 				007E88361E2D92CB007A7A4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -5,7 +5,7 @@
 //  Created by maruyamamotoki on 2017/01/19.
 //  Copyright © 2017年 山下亮. All rights reserved.
 //
-import UIKit
+/*import UIKit
 
 class ViewController: UIImagePickerController {
 
@@ -59,4 +59,4 @@ class ViewController: UIImagePickerController {
     }
     
     
-}
+}*/

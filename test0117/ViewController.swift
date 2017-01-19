@@ -5,11 +5,13 @@
 //  Created by maruyamamotoki on 2017/01/19.
 //  Copyright © 2017年 山下亮. All rights reserved.
 //
-/*import UIKit
+import UIKit
+import MobileCoreServices
 
-class ViewController: UIImagePickerController {
-
-    @IBAction func showPicker(sender: AnyObject) {
+class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    @IBAction func reccoding(sender: AnyObject) {
+        
         
         var actionSheet = UIAlertController(title: "選択してください", message: nil, preferredStyle: .ActionSheet)
         
@@ -22,18 +24,26 @@ class ViewController: UIImagePickerController {
             picker.cameraDevice = UIImagePickerControllerCameraDevice.Rear
             
             if(act.title == "写真撮影"){
-                picker.mediaTypes = [KUTTypeImage as String]
+                picker.mediaTypes = [kUTTypeImage as String]
                 picker.cameraCaptureMode = UIImagePickerControllerCameraCaptureMode.Photo
                 
             }
             else{
-                picker.mediaTypes = [KUTTypeMovie as String]
+                picker.mediaTypes = [kUTTypeMovie as String]
                 picker.cameraCaptureMode = UIImagePickerControllerCameraCaptureMode.Video
                 
                 picker.videoQuality = UIImagePickerControllerQualityType.TypeHigh
                 
                 picker.videoMaximumDuration = 300
             }
+            
+            
+            
+            
+            
+            
+            
+            
             
             picker.allowsEditing = true
             self.presentViewController(picker, animated: true, completion: nil)
@@ -45,7 +55,7 @@ class ViewController: UIImagePickerController {
         self.presentViewController(actionSheet, animated: true, completion: nil)
     }
     
-    
+
 
     
     override func viewDidLoad() {
@@ -59,4 +69,4 @@ class ViewController: UIImagePickerController {
     }
     
     
-}*/
+}

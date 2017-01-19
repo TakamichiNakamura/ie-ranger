@@ -55,7 +55,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="🎥🎤🖋 記録開始"/>
                                 <connections>
-                                    <segue destination="rOp-zg-8RM" kind="show" id="Qms-Vq-VDZ"/>
+                                    <segue destination="rOp-zg-8RM" kind="show" id="EAz-d9-PTT"/>
                                 </connections>
                             </button>
                         </barButtonItem>
@@ -122,7 +122,7 @@
         <!--View Controller-->
         <scene sceneID="l5p-UR-jmg">
             <objects>
-                <viewController id="rOp-zg-8RM" customClass="ViewController" customModule="test0117" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="rOp-zg-8RM" customClass="ViewController" customModule="test0117" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8Dw-kc-av2"/>
                         <viewControllerLayoutGuide type="bottom" id="Lxw-kx-kLl"/>
@@ -131,29 +131,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YhI-N7-42M">
-                                <rect key="frame" x="164" y="318" width="46" height="30"/>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Cf-dP-f5V">
+                                <rect key="frame" x="156" y="279" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="45x-kO-SHg">
-                                <rect key="frame" x="88" y="618" width="375" height="49"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <items>
-                                    <tabBarItem systemItem="favorites" id="HMm-jP-WOG"/>
-                                </items>
-                            </tabBar>
+                                <connections>
+                                    <action selector="reccoding:" destination="rOp-zg-8RM" eventType="valueChanged" id="fHM-iq-Js2"/>
+                                </connections>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="more" id="Jf2-FX-jCS"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zeW-dA-qaN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1505" y="261"/>
+            <point key="canvasLocation" x="-433" y="179"/>
         </scene>
         <!--Test View Controller-->
         <scene sceneID="z6Q-ux-JkX">

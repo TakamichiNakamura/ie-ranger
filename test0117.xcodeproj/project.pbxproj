@@ -15,6 +15,8 @@
 		00C8D78F1E2DC3AE00FF0DD0 /* testViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C8D78E1E2DC3AE00FF0DD0 /* testViewController.swift */; };
 		00C8D7911E2DCE8100FF0DD0 /* testSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C8D7901E2DCE8100FF0DD0 /* testSetting.swift */; };
 		00C8D7931E2DD8A200FF0DD0 /* memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C8D7921E2DD8A200FF0DD0 /* memo.swift */; };
+		B21A9AF01E3062D5000A87DE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B21A9AEF1E3062D5000A87DE /* UIKit.framework */; };
+		B21A9AF21E3062F2000A87DE /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B21A9AF11E3062F2000A87DE /* MobileCoreServices.framework */; };
 		B28717E61E2FE1C800F448EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28717E51E2FE1C800F448EC /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +31,8 @@
 		00C8D78E1E2DC3AE00FF0DD0 /* testViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testViewController.swift; sourceTree = "<group>"; };
 		00C8D7901E2DCE8100FF0DD0 /* testSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testSetting.swift; sourceTree = "<group>"; };
 		00C8D7921E2DD8A200FF0DD0 /* memo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = memo.swift; sourceTree = "<group>"; };
+		B21A9AEF1E3062D5000A87DE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B21A9AF11E3062F2000A87DE /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		B28717E51E2FE1C800F448EC /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -37,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B21A9AF21E3062F2000A87DE /* MobileCoreServices.framework in Frameworks */,
+				B21A9AF01E3062D5000A87DE /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +54,7 @@
 			children = (
 				007E88241E2D92CB007A7A4F /* test0117 */,
 				007E88231E2D92CB007A7A4F /* Products */,
+				B21A9AEE1E3062D5000A87DE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +81,15 @@
 				007E88311E2D92CB007A7A4F /* Info.plist */,
 			);
 			path = test0117;
+			sourceTree = "<group>";
+		};
+		B21A9AEE1E3062D5000A87DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B21A9AF11E3062F2000A87DE /* MobileCoreServices.framework */,
+				B21A9AEF1E3062D5000A87DE /* UIKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

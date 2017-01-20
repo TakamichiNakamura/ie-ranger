@@ -38,13 +38,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             }
             
             
-            
-            
-            
-            
-            
-            
-            
             picker.allowsEditing = true
             self.presentViewController(picker, animated: true, completion: nil)
             

@@ -17,7 +17,8 @@
 		00C8D7931E2DD8A200FF0DD0 /* memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C8D7921E2DD8A200FF0DD0 /* memo.swift */; };
 		B21A9AF01E3062D5000A87DE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B21A9AEF1E3062D5000A87DE /* UIKit.framework */; };
 		B21A9AF21E3062F2000A87DE /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B21A9AF11E3062F2000A87DE /* MobileCoreServices.framework */; };
-		B28717E61E2FE1C800F448EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28717E51E2FE1C800F448EC /* ViewController.swift */; };
+		B21A9AF41E37034E000A87DE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B21A9AF31E37034E000A87DE /* AVFoundation.framework */; };
+		B28717E61E2FE1C800F448EC /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28717E51E2FE1C800F448EC /* CameraViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +34,8 @@
 		00C8D7921E2DD8A200FF0DD0 /* memo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = memo.swift; sourceTree = "<group>"; };
 		B21A9AEF1E3062D5000A87DE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B21A9AF11E3062F2000A87DE /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		B28717E51E2FE1C800F448EC /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B21A9AF31E37034E000A87DE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B28717E51E2FE1C800F448EC /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B21A9AF41E37034E000A87DE /* AVFoundation.framework in Frameworks */,
 				B21A9AF21E3062F2000A87DE /* MobileCoreServices.framework in Frameworks */,
 				B21A9AF01E3062D5000A87DE /* UIKit.framework in Frameworks */,
 			);
@@ -69,7 +72,7 @@
 		007E88241E2D92CB007A7A4F /* test0117 */ = {
 			isa = PBXGroup;
 			children = (
-				B28717E51E2FE1C800F448EC /* ViewController.swift */,
+				B28717E51E2FE1C800F448EC /* CameraViewController.swift */,
 				007E88251E2D92CB007A7A4F /* AppDelegate.swift */,
 				007E88291E2D92CB007A7A4F /* Main.storyboard */,
 				00C8D78C1E2D9B5800FF0DD0 /* ListViewController.swift */,
@@ -86,6 +89,7 @@
 		B21A9AEE1E3062D5000A87DE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B21A9AF31E37034E000A87DE /* AVFoundation.framework */,
 				B21A9AF11E3062F2000A87DE /* MobileCoreServices.framework */,
 				B21A9AEF1E3062D5000A87DE /* UIKit.framework */,
 			);
@@ -164,7 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B28717E61E2FE1C800F448EC /* ViewController.swift in Sources */,
+				B28717E61E2FE1C800F448EC /* CameraViewController.swift in Sources */,
 				00C8D7931E2DD8A200FF0DD0 /* memo.swift in Sources */,
 				00C8D78F1E2DC3AE00FF0DD0 /* testViewController.swift in Sources */,
 				00C8D78D1E2D9B5800FF0DD0 /* ListViewController.swift in Sources */,

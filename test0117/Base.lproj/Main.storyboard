@@ -46,7 +46,7 @@
                     <toolbarItems>
                         <barButtonItem style="plain" id="BWT-3B-kUq">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="20P-Ul-8qT">
-                                <rect key="frame" x="235" y="7" width="124" height="30"/>
+                                <rect key="frame" x="16" y="7" width="124" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="🎥🎤🖋 記録開始"/>
                             </button>

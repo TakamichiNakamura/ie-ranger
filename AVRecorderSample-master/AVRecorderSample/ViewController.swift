@@ -4,8 +4,8 @@ import AVFoundation
 class ViewController: UIViewController {
 
     // file操作をするNSFileManager
-    // 録音したファイルをDocmentsディレクトリに保存
-    // 他にもtmpディレクトリやLibrary/Cachesディレクトリなんかが
+    // 録音したファイルをDocumentsディレクトリに保存
+    // 端末のDocumentsディレクトリに保存された情報を再生画面で読み込む.
     let fileManager = NSFileManager()
     var audioRecorder: AVAudioRecorder?
     var audioPlayer: AVAudioPlayer?

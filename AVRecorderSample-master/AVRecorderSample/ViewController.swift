@@ -7,6 +7,7 @@ class ViewController: UIViewController {
     // 録音したファイルをDocumentsディレクトリに保存
     // 端末のDocumentsディレクトリに保存された情報を再生画面で読み込む.
     // 機能的に独立しているため,一つの案として，カメラと録音のアプリを独立させ，機能を起動させるボタンを押すと他のアプリケーションが起動する，というのはどうだろうか．
+    // あるいは，実機のアプリケーション"写真"の中に入っている場合，そこから時間軸からノートの中に埋め込む
     let fileManager = NSFileManager()
     var audioRecorder: AVAudioRecorder?
     var audioPlayer: AVAudioPlayer?

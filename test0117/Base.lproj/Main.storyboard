@@ -64,7 +64,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="🎥🎤🖋 記録開始"/>
                                 <connections>
-                                    <segue destination="rOp-zg-8RM" kind="presentation" id="fyZ-iF-jd2"/>
+                                    <segue destination="rOp-zg-8RM" kind="show" id="OKe-VH-D9M"/>
                                 </connections>
                             </button>
                         </barButtonItem>
@@ -140,15 +140,6 @@
                     <view key="view" contentMode="scaleToFill" id="g2W-64-XGr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hav-9J-0nG">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Title" id="51G-Hk-LGi"/>
-                                </items>
-                            </navigationBar>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                     </view>

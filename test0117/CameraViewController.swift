@@ -27,7 +27,7 @@ class CameraViewController: UIViewController, UIGestureRecognizerDelegate, UITex
     var timer:NSTimer!
     //データを保存するためのdocumentフォルダのパス取得
     let path = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true)[0]
-    var madePath:String! = "test初期値"
+    var madePath:String!
     
     //撮影された画像のインデックス用
     var photoCount:Int=0

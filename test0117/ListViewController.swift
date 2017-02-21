@@ -70,15 +70,15 @@ class ListViewController:UITableViewController{
         self.refControl?.endRefreshing()
     }
     
-//    //itemViewControllerにタップされたセルの番号を渡す
-//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-//        if let a = self.tableView.indexPathForSelectedRow{
-//            print("aは",a)
-//            let b = segue.destinationViewController as! itemViewController
-//            print("選ばれたセルは",self.pathList[a.row])
-//            b.selectedDir = self.pathList[a.row]
-//        }
-//    }
+    //itemViewControllerにタップされたセルの番号を渡す
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let a = self.tableView.indexPathForSelectedRow{
+            print("aは",a)
+            let b = segue.destinationViewController as! itemViewController
+            print("選ばれたセルは",self.pathList[a.row])
+            b.selectedDir = self.pathList[a.row]
+        }
+    }
     
     /*
     override func viewWillDisappear(animated: Bool) {

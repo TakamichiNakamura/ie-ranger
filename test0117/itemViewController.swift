@@ -4,9 +4,10 @@ class itemViewController:UIViewController,UITableViewDelegate, UITableViewDataSo
     
     var path = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true)[0]
     
-    @IBOutlet weak var itemList: UITableView!
+//    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var tableView: UITableView!
     
-    var selectedDir:String!="20170220204117"
+    var selectedDir:String!
     var madePath:String!// = path + "/" + selectedDir
     
     override func viewDidLoad() {
@@ -22,11 +23,11 @@ class itemViewController:UIViewController,UITableViewDelegate, UITableViewDataSo
         //ファイル一覧を確認
         let manager = NSFileManager.defaultManager()
         
-        var itemList:[String]=[]
+        var list:[String]=[]
         do {
-            itemList = try manager.contentsOfDirectoryAtPath(madePath)
+            list = try manager.contentsOfDirectoryAtPath(madePath)
             print ("success!")
-            for path in itemList {
+            for path in list {
                 print( path )
             }
         } catch let error as NSError {
@@ -38,11 +39,11 @@ class itemViewController:UIViewController,UITableViewDelegate, UITableViewDataSo
     //次の画面にテーブルのindexの値を渡す
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if let a = self.itemList.indexPathForSelectedRow{
+        if let a = self.tableView.indexPathForSelectedRow{
             let b = segue.destinationViewController as! detailViewController
             
             b.imageIndex = a.row
-            b.dir = selectedDir
+            b.dir = self.selectedDir
             
         }
     }

@@ -11,10 +11,11 @@
 		007E882B1E2D92CB007A7A4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 007E88291E2D92CB007A7A4F /* Main.storyboard */; };
 		007E882D1E2D92CB007A7A4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 007E882C1E2D92CB007A7A4F /* Assets.xcassets */; };
 		007E88301E2D92CB007A7A4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 007E882E1E2D92CB007A7A4F /* LaunchScreen.storyboard */; };
+		008755A91E5AF19200F09032 /* detailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008755A81E5AF19200F09032 /* detailViewController.swift */; };
+		008755AB1E5AF2AC00F09032 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008755AA1E5AF2AC00F09032 /* CustomCell.swift */; };
 		00C8D78D1E2D9B5800FF0DD0 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C8D78C1E2D9B5800FF0DD0 /* ListViewController.swift */; };
-		00C8D78F1E2DC3AE00FF0DD0 /* testViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C8D78E1E2DC3AE00FF0DD0 /* testViewController.swift */; };
-		00C8D7911E2DCE8100FF0DD0 /* testSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C8D7901E2DCE8100FF0DD0 /* testSetting.swift */; };
-		00C8D7931E2DD8A200FF0DD0 /* memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C8D7921E2DD8A200FF0DD0 /* memo.swift */; };
+		00C8D78F1E2DC3AE00FF0DD0 /* itemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C8D78E1E2DC3AE00FF0DD0 /* itemViewController.swift */; };
+		00C8D7911E2DCE8100FF0DD0 /* SettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C8D7901E2DCE8100FF0DD0 /* SettingController.swift */; };
 		B21A9AF01E3062D5000A87DE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B21A9AEF1E3062D5000A87DE /* UIKit.framework */; };
 		B21A9AF41E37034E000A87DE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B21A9AF31E37034E000A87DE /* AVFoundation.framework */; };
 		B28717E61E2FE1C800F448EC /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28717E51E2FE1C800F448EC /* CameraViewController.swift */; };
@@ -27,10 +28,11 @@
 		007E882C1E2D92CB007A7A4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		007E882F1E2D92CB007A7A4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		007E88311E2D92CB007A7A4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		008755A81E5AF19200F09032 /* detailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = detailViewController.swift; sourceTree = "<group>"; };
+		008755AA1E5AF2AC00F09032 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		00C8D78C1E2D9B5800FF0DD0 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
-		00C8D78E1E2DC3AE00FF0DD0 /* testViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testViewController.swift; sourceTree = "<group>"; };
-		00C8D7901E2DCE8100FF0DD0 /* testSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testSetting.swift; sourceTree = "<group>"; };
-		00C8D7921E2DD8A200FF0DD0 /* memo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = memo.swift; sourceTree = "<group>"; };
+		00C8D78E1E2DC3AE00FF0DD0 /* itemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = itemViewController.swift; sourceTree = "<group>"; };
+		00C8D7901E2DCE8100FF0DD0 /* SettingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingController.swift; sourceTree = "<group>"; };
 		B21A9AEF1E3062D5000A87DE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B21A9AF11E3062F2000A87DE /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		B21A9AF31E37034E000A87DE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -74,12 +76,13 @@
 				007E88251E2D92CB007A7A4F /* AppDelegate.swift */,
 				007E88291E2D92CB007A7A4F /* Main.storyboard */,
 				00C8D78C1E2D9B5800FF0DD0 /* ListViewController.swift */,
-				00C8D78E1E2DC3AE00FF0DD0 /* testViewController.swift */,
-				00C8D7921E2DD8A200FF0DD0 /* memo.swift */,
-				00C8D7901E2DCE8100FF0DD0 /* testSetting.swift */,
+				008755A81E5AF19200F09032 /* detailViewController.swift */,
+				00C8D78E1E2DC3AE00FF0DD0 /* itemViewController.swift */,
+				00C8D7901E2DCE8100FF0DD0 /* SettingController.swift */,
 				007E882C1E2D92CB007A7A4F /* Assets.xcassets */,
 				007E882E1E2D92CB007A7A4F /* LaunchScreen.storyboard */,
 				007E88311E2D92CB007A7A4F /* Info.plist */,
+				008755AA1E5AF2AC00F09032 /* CustomCell.swift */,
 			);
 			path = test0117;
 			sourceTree = "<group>";
@@ -126,7 +129,7 @@
 				TargetAttributes = {
 					007E88211E2D92CB007A7A4F = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = UEV9Z3U7Q3;
+						DevelopmentTeam = 6696GEY228;
 					};
 				};
 			};
@@ -167,11 +170,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B28717E61E2FE1C800F448EC /* CameraViewController.swift in Sources */,
-				00C8D7931E2DD8A200FF0DD0 /* memo.swift in Sources */,
-				00C8D78F1E2DC3AE00FF0DD0 /* testViewController.swift in Sources */,
+				00C8D78F1E2DC3AE00FF0DD0 /* itemViewController.swift in Sources */,
 				00C8D78D1E2D9B5800FF0DD0 /* ListViewController.swift in Sources */,
-				00C8D7911E2DCE8100FF0DD0 /* testSetting.swift in Sources */,
+				00C8D7911E2DCE8100FF0DD0 /* SettingController.swift in Sources */,
 				007E88261E2D92CB007A7A4F /* AppDelegate.swift in Sources */,
+				008755AB1E5AF2AC00F09032 /* CustomCell.swift in Sources */,
+				008755A91E5AF19200F09032 /* detailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,11 +291,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = UEV9Z3U7Q3;
+				DEVELOPMENT_TEAM = 6696GEY228;
 				INFOPLIST_FILE = test0117/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = edu.self.test0117.e155763;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.self.test0117;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 2.3;
 			};
@@ -302,11 +306,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = UEV9Z3U7Q3;
+				DEVELOPMENT_TEAM = 6696GEY228;
 				INFOPLIST_FILE = test0117/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = edu.self.test0117.e155763;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.self.test0117;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 2.3;
 			};

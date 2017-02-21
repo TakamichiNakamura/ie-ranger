@@ -20,8 +20,12 @@ class CustomCell: UITableViewCell {
     
     //cellにデータを格納させるメソッド
     func setCell(index :Int,dir:String) {
-        self.path = self.path + "/" + dir
-        let imagePath:String = path + "/photo" + String(index) + ".jpg"
+        print("self.pathは",self.path)
+        print("dirは",dir)
+        print("indexは",index)
+        let imagePath:String = self.path + "/" + dir + "/photo/" + String(index) + ".jpg"
+        print("imagePathは",imagePath)
+                
         let imageTest:UIImage = UIImage(contentsOfFile: imagePath)!
         let memoPath:String = path + "/memo" + String(index)
         var memoTest:String = ""

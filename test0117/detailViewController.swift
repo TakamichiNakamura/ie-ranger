@@ -16,7 +16,7 @@ class detailViewController:UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         self.path = path + "/" + dir
-        let a:String = self.path + "/photo" + String(imageIndex) + ".jpg"
+        let a:String = self.path + "/photo/" + String(imageIndex) + ".jpg"
         let b:UIImage = UIImage(contentsOfFile: a)!
         
         self.previewImage.image = b

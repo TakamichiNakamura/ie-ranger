@@ -3,7 +3,7 @@ import UIKit
 
 class SettingController:UITableViewController{
     
-    var koumoku:[String] = ["[未実装]自動記録終了する？するなら何分？","[未実装]どれくらいの感覚で記録する？(単位:秒)","[未実装]カメラの画質は？","などなど"]
+    var koumoku:[String] = ["自動記録終了する？するなら何分？","どれくらいの感覚で記録する？(単位:秒)","カメラの画質は？","動画も撮るのか","講演者の喋りを自動書き起こしをするか","録音もするか","撮影をするか","カメラを無音で撮るか","アルバムappにも保存するか","などなど"]
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return koumoku.count

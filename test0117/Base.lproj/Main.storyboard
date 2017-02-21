@@ -72,7 +72,7 @@
             </objects>
             <point key="canvasLocation" x="1055" y="1052"/>
         </scene>
-        <!--Setting Controller-->
+        <!--設定-->
         <scene sceneID="aua-dM-Vme">
             <objects>
                 <tableViewController id="0Pt-3Z-MbI" customClass="SettingController" customModule="test0117" customModuleProvider="target" sceneMemberID="viewController">
@@ -81,35 +81,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="cCr-0t-lYs" style="IBUITableViewCellStyleDefault" id="kQ5-c6-orr">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="cCr-0t-lYs" detailTextLabel="g7y-6Q-ZHH" style="IBUITableViewCellStyleValue1" id="kQ5-c6-orr">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kQ5-c6-orr" id="SG9-ND-2wZ">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cCr-0t-lYs">
-                                            <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cCr-0t-lYs" userLabel="fcgvjhbkjん">
+                                            <rect key="frame" x="15" y="12" width="33.5" height="20.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                    </subviews>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="Tis-Kh-5Jx" rowHeight="128" style="IBUITableViewCellStyleDefault" id="468-Zz-Lc0">
-                                <rect key="frame" x="0.0" y="72" width="375" height="128"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="468-Zz-Lc0" id="iKC-8f-erR">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="127.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="これはテストです" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Tis-Kh-5Jx">
-                                            <rect key="frame" x="15" y="0.0" width="345" height="127.5"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="☑️" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="g7y-6Q-ZHH">
+                                            <rect key="frame" x="337" y="12" width="23" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -121,6 +111,7 @@
                             <outlet property="delegate" destination="0Pt-3Z-MbI" id="ae2-aJ-9Ae"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="設定" id="LsA-EK-wKc"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Cy-Lf-DlI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -177,18 +168,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6QR-Cq-hWZ" userLabel="tableView">
-                                <rect key="frame" x="0.0" y="101" width="375" height="522"/>
+                                <rect key="frame" x="0.0" y="130" width="375" height="537"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <textView key="tableFooterView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="3A6-2b-zfQ">
-                                    <rect key="frame" x="0.0" y="128" width="375" height="149"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <string key="text">githubのプロジェクトでやってるとよく分からないエラーが出たから別プロジェクトで軽く試してみた。
-とりあえず、等間隔での撮影、画像とかの一覧表示、画像プレビュー、録音、再生、メモ入力、メモ表示をそれぞれ確認した。細かいところはまだ調整しなければならない
-目処がついたら本プロジェクトの方に各機能を実装する感じ？</string>
-                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                </textView>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomCell" rowHeight="100" id="Gsa-Xe-0RZ" customClass="CustomCell" customModule="test0117" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="100"/>
@@ -241,24 +222,26 @@
                                     <outlet property="delegate" destination="dSd-Kh-Pgf" id="53r-cj-MSZ"/>
                                 </connections>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="タップして画像と、その時の音声を聞く" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PWC-T2-fY6">
-                                <rect key="frame" x="32" y="72" width="312" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="ここに全体のメモを書こう！(講義名や日時なども" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tMm-FZ-Fuk">
+                                <rect key="frame" x="0.0" y="64" width="375" height="69"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="6QR-Cq-hWZ" firstAttribute="bottom" secondItem="xWy-9G-AQC" secondAttribute="top" id="A5X-Vi-Utj"/>
-                            <constraint firstItem="PWC-T2-fY6" firstAttribute="top" secondItem="iHe-Qh-XeB" secondAttribute="bottom" constant="8" symbolic="YES" id="NOg-w5-l1O"/>
-                            <constraint firstAttribute="trailing" secondItem="6QR-Cq-hWZ" secondAttribute="trailing" id="Ysf-S7-xdj"/>
-                            <constraint firstItem="6QR-Cq-hWZ" firstAttribute="top" secondItem="PWC-T2-fY6" secondAttribute="bottom" constant="8" symbolic="YES" id="Zok-8I-Ht4"/>
-                            <constraint firstItem="PWC-T2-fY6" firstAttribute="centerX" secondItem="6QR-Cq-hWZ" secondAttribute="centerX" id="gy0-37-ZlP"/>
-                            <constraint firstItem="6QR-Cq-hWZ" firstAttribute="leading" secondItem="5t2-0D-0lc" secondAttribute="leading" id="mhf-NX-Ybe"/>
+                            <constraint firstAttribute="trailing" secondItem="tMm-FZ-Fuk" secondAttribute="trailing" id="0Zd-yS-91k"/>
+                            <constraint firstItem="6QR-Cq-hWZ" firstAttribute="top" secondItem="iHe-Qh-XeB" secondAttribute="bottom" constant="66" id="1gO-wL-cdj"/>
+                            <constraint firstItem="tMm-FZ-Fuk" firstAttribute="top" secondItem="iHe-Qh-XeB" secondAttribute="bottom" id="GTp-se-bg4"/>
+                            <constraint firstItem="tMm-FZ-Fuk" firstAttribute="trailing" secondItem="6QR-Cq-hWZ" secondAttribute="trailing" id="cLT-lx-M3i"/>
+                            <constraint firstItem="tMm-FZ-Fuk" firstAttribute="leading" secondItem="6QR-Cq-hWZ" secondAttribute="leading" id="hcW-tS-4iK"/>
+                            <constraint firstItem="tMm-FZ-Fuk" firstAttribute="leading" secondItem="5t2-0D-0lc" secondAttribute="leading" id="uHf-qr-amz"/>
+                            <constraint firstAttribute="bottom" secondItem="6QR-Cq-hWZ" secondAttribute="bottom" id="vNK-bk-kgy"/>
+                            <constraint firstItem="xWy-9G-AQC" firstAttribute="top" secondItem="tMm-FZ-Fuk" secondAttribute="bottom" constant="490" id="vbM-3y-sO2"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="x5q-p2-g0d"/>
+                    <navigationItem key="navigationItem" title="タップして画像と、その時の音声を聴こう" id="x5q-p2-g0d"/>
                     <connections>
                         <outlet property="tableView" destination="6QR-Cq-hWZ" id="VzJ-rF-jYn"/>
                     </connections>
@@ -280,7 +263,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rj8-1l-9xG" userLabel="previewImage">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

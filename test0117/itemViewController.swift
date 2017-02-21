@@ -18,7 +18,7 @@ class itemViewController:UIViewController,UITableViewDelegate, UITableViewDataSo
          tableView.dataSource = self
          */
         
-        madePath = path + "/" + selectedDir
+        self.madePath = path + "/" + selectedDir
         
         //ファイル一覧を確認
         let manager = NSFileManager.defaultManager()
@@ -56,7 +56,22 @@ class itemViewController:UIViewController,UITableViewDelegate, UITableViewDataSo
     
     // セクションの行数
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        var pathList:[String]=[]
+        let manager = NSFileManager.defaultManager()
+        //var itemList:[String]=[]
+        var photoCount:Int!=1
+        do {
+            let photoPath:String! = self.madePath + "/photo"
+            print("photopathは",photoPath)
+            pathList = try
+                manager.contentsOfDirectoryAtPath(photoPath)
+            print ("success!")
+            print("photoのitemList->",pathList)
+            photoCount = pathList.count
+        } catch let error as NSError {
+            print ("fail!")
+        }
+        return photoCount
     }
     
     

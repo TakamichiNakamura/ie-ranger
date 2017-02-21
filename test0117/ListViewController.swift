@@ -34,24 +34,24 @@ class ListViewController:UITableViewController{
         } catch let error as NSError {
             print ("fail!")
         }
-        do {
-            let a = path + "/20170221181325"
-            print("aは",a)
-            self.pathList = try manager.contentsOfDirectoryAtPath(a)
-            print ("success!")
-            print("path/20170221181325は？ー＞",self.pathList)
-        } catch let error as NSError {
-            print ("fail!")
-        }
-        do {
-            let a = path + "/20170221181325/photo"
-            print("aは",a)
-            self.pathList = try manager.contentsOfDirectoryAtPath(a)
-            print ("success!")
-            print("path/20170221181325/photoは？ー＞",self.pathList)
-        } catch let error as NSError {
-            print ("fail!")
-        }
+//        do {
+//            let a = path + "/20170221182836"
+//            print("aは",a)
+//            self.pathList = try manager.contentsOfDirectoryAtPath(a)
+//            print ("success!")
+//            print("path/20170221182836は？ー＞",self.pathList)
+//        } catch let error as NSError {
+//            print ("fail!")
+//        }
+//        do {
+//            let a = path + "/20170221182836/photo"
+//            print("aは",a)
+//            self.pathList = try manager.contentsOfDirectoryAtPath(a)
+//            print ("success!")
+//            print("path/20170221182836/photoは？ー＞",self.pathList)
+//        } catch let error as NSError {
+//            print ("fail!")
+//        }
         self.refControl = UIRefreshControl()
         self.refControl.attributedTitle = NSAttributedString(string: "引っ張って更新")
         self.refControl.addTarget(self, action: #selector(ListViewController.refresh), forControlEvents: UIControlEvents.ValueChanged)

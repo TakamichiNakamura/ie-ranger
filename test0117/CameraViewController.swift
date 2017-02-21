@@ -373,6 +373,7 @@ class CameraViewController: UIViewController, UIGestureRecognizerDelegate, UITex
      改行ボタンが押された際に呼ばれるデリゲートメソッド.
      */
     func textFieldShouldReturn(textField: UITextField) -> Bool {
+        print("textField.textの中身->",textField.text)
         let memo = textField.text!.dataUsingEncoding(NSUTF8StringEncoding)
         let memoPath:String! = self.madePath + "/memo" + String(self.photoCount)
         

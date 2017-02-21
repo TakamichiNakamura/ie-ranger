@@ -168,14 +168,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6QR-Cq-hWZ" userLabel="tableView">
-                                <rect key="frame" x="0.0" y="130" width="375" height="537"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomCell" rowHeight="100" id="Gsa-Xe-0RZ" customClass="CustomCell" customModule="test0117" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Gsa-Xe-0RZ" id="2Tq-Hw-238">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TAN-jy-H0W" userLabel="ImagePhoto">
@@ -222,23 +222,13 @@
                                     <outlet property="delegate" destination="dSd-Kh-Pgf" id="53r-cj-MSZ"/>
                                 </connections>
                             </tableView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="ここに全体のメモを書こう！(講義名や日時なども" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tMm-FZ-Fuk">
-                                <rect key="frame" x="0.0" y="64" width="375" height="69"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="tMm-FZ-Fuk" secondAttribute="trailing" id="0Zd-yS-91k"/>
-                            <constraint firstItem="6QR-Cq-hWZ" firstAttribute="top" secondItem="iHe-Qh-XeB" secondAttribute="bottom" constant="66" id="1gO-wL-cdj"/>
-                            <constraint firstItem="tMm-FZ-Fuk" firstAttribute="top" secondItem="iHe-Qh-XeB" secondAttribute="bottom" id="GTp-se-bg4"/>
-                            <constraint firstItem="tMm-FZ-Fuk" firstAttribute="trailing" secondItem="6QR-Cq-hWZ" secondAttribute="trailing" id="cLT-lx-M3i"/>
-                            <constraint firstItem="tMm-FZ-Fuk" firstAttribute="leading" secondItem="6QR-Cq-hWZ" secondAttribute="leading" id="hcW-tS-4iK"/>
-                            <constraint firstItem="tMm-FZ-Fuk" firstAttribute="leading" secondItem="5t2-0D-0lc" secondAttribute="leading" id="uHf-qr-amz"/>
-                            <constraint firstAttribute="bottom" secondItem="6QR-Cq-hWZ" secondAttribute="bottom" id="vNK-bk-kgy"/>
-                            <constraint firstItem="xWy-9G-AQC" firstAttribute="top" secondItem="tMm-FZ-Fuk" secondAttribute="bottom" constant="490" id="vbM-3y-sO2"/>
+                            <constraint firstItem="6QR-Cq-hWZ" firstAttribute="leading" secondItem="5t2-0D-0lc" secondAttribute="leading" id="97M-LT-KfT"/>
+                            <constraint firstAttribute="bottom" secondItem="6QR-Cq-hWZ" secondAttribute="bottom" id="Mq3-OR-EYH"/>
+                            <constraint firstAttribute="trailing" secondItem="6QR-Cq-hWZ" secondAttribute="trailing" id="wpo-B4-1DM"/>
+                            <constraint firstItem="6QR-Cq-hWZ" firstAttribute="top" secondItem="iHe-Qh-XeB" secondAttribute="bottom" id="x2c-lJ-JNK"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="タップして画像と、その時の音声を聴こう" id="x5q-p2-g0d"/>

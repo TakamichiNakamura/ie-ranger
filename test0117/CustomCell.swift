@@ -27,11 +27,14 @@ class CustomCell: UITableViewCell {
         print("imagePathは",imagePath)
                 
         let imageTest:UIImage = UIImage(contentsOfFile: imagePath)!
-        let memoPath:String = path + "/memo" + String(index)
-        var memoTest:String = ""
+        let memoPath:String = self.path + "/" + dir + "/memo" + String(index)
+        print("memoPathは",memoPath)
+        var memoTest:String = "メモなし"
         let manager = NSFileManager()
         if manager.fileExistsAtPath(memoPath){
             try! memoTest = NSString(contentsOfFile: memoPath, encoding: NSUTF8StringEncoding) as String
+        }else{
+            print("fail!!!!!!!!!!!")
         }
         self.photoImage.image = imageTest
         self.memoText.text = memoTest
